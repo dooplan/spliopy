@@ -6,7 +6,7 @@ Python wrapper around Splio-EmailForge REST API 1.0
 
 ## Usage 
 ```python
-from spliopy import SplioConnection
+from spliopy.spliopy import SplioConnection
 connection = SplioConnection(API_KEY, UNIVERSE)
 ```
   - Get universe database fields
