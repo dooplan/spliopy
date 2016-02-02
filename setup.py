@@ -4,12 +4,6 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-here = path.abspath(path.dirname(__file__))
-
-# Get the long description from the README file
-with open(path.join(here, 'README.md'), encoding='utf-8') as f:
-    long_description = f.read()
-
 setup(
     name='spliopy',
     # Versions should comply with PEP440.  For a discussion on single-sourcing
@@ -17,7 +11,6 @@ setup(
     # https://packaging.python.org/en/latest/single_source_version.html
     version='1.1.0',
     description='Python wrapper around the API, using Splio API REST 1.0',
-    long_description=long_description,
     # The project's main homepage.
     url='https://github.com/dooplan/spliopy',
     author='Pasqual Guerrero',
