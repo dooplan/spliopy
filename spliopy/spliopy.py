@@ -22,7 +22,7 @@ STATUS_CODES = {
     501: 'Not Implemented',
 }
 
-class Connection(object):
+class SplioConnection(object):
 
     def __init__(self, api_key, universe,):
         '''
