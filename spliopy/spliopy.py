@@ -51,32 +51,32 @@ class SplioConnection(object):
         '''
         Returns all lists defined for the universe.
         '''
-        return self.request('get','lists').json()
+        return self.request('get','lists')
 
     def get_fields(self):
         '''
         Returns custom fields relevant for the universe.
         '''
-        return self.request('get','fields').json()
+        return self.request('get','fields')
 
     def get_contact(self, email):
         '''
         Returns all known attributes for a contact identified by email.
         '''
-        return self.request('get', 'contact/%s' % email).json()
+        return self.request('get', 'contact/%s' % email)
 
     def add_contact(self, contact_data={}):
         '''
         Creates a new contact. It is mandatory to provide the email address 
         within the fields.
         '''
-        return self.request('post','contact', contact_data).json()
+        return self.request('post','contact', contact_data)
 
     def update_contact(self, email, update_data={}):
         '''
         Updates an existing contact identified by email.
         '''
-        return self.request('put','contact/%s' % email, update_data).json()
+        return self.request('put','contact/%s' % email, update_data)
 
     def blacklist(self, email):
         '''
